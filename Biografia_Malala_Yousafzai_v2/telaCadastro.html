@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro BioVerse</title>
+</head>
+<body>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #020822, #2a0757, rgb(30, 12, 78),rgb(2, 4, 26));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    height: 100vh;
+}
+    </style>
+
+<div class="container">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+    </div>
+</div>
+
+
+<div class="containerRegistro">
+    <div class="box">
+    <div class="box-login" id="login">
+        <div class="top-header">
+            <h3>Hello, <span>BIOVERSE!</span></h3>
+            <small>Pronto para ler biografias?</small>
+        </div>
+        <div class="input-group">
+             <div class="input-field">
+                <input type="text" class="input-box" id="logEmail" required>
+                <label for="logEmail">E-mail</label>
+             </div>
+             <div class="input-field">
+                <input type="password" class="input-box" id="logPassword" required>
+                <label for="logPassword">Senha</label>
+                <div class="eye-area">
+                 <div  class="eye-box" onclick="myLogPassword()">
+                  <i class="fa-regular fa-eye" id="eye"></i>
+                  <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+               </div>
+             </div>
+             </div>
+             <div class="remember">
+                <input type="checkbox" id="formCheck" class="check">
+                <label for="formCheck">Lembrar-me</label>
+             </div>
+             <div class="input-field">
+                <a href="Biografia.html">
+                <input type="submit" class="input-submit" value="Entrar" required>
+            </a>
+             </div>   
+        </div>
+     </div>
+        <!---------------------------- register --------------------------------------->
+      <div class="box-register" id="register">
+        <div class="top-header">
+            <h3>Cadastre-se!</h3>
+            <small>Estamos feliz por você.</small>
+        </div>
+        <div class="input-group">
+             <div class="input-field">
+                <input type="text" class="input-box" id="regUsername" required>
+                <label for="regUsername">Nickname</label>
+             </div>
+             <div class="input-field">
+                <input type="text" class="input-box" id="regEmail"  required>
+                <label for="regEmail">E-mail</label>
+             </div>
+             <div class="input-field">
+                <input type="password" class="input-box" id="regPassword"  required>
+                <label for="regPassword">Senha</label>
+                <div class="eye-area">
+                  <div  class="eye-box" onclick="myRegPassword()">
+                   <i class="fa-regular fa-eye" id="eye-2"></i>
+                   <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+                </div>
+              </div>
+             </div>
+             
+             <div class="remember">
+                <input type="checkbox" id="formCheck2" class="check">
+                <label for="formCheck2">Lembrar-me</label>
+             </div>
+             <div class="input-field">
+                <input type="submit" class="input-submit" value="Sign Up" required>
+             </div>
+        </div>
+     </div>
+     <div class="switch">
+        <a href="#" class="login active" onclick="login()">Login</a>
+        <a href="#" class="register" onclick="register()">Registrar</a>
+        <div class="btn-active" id="btn"></div>
+     </div>
+     
+    </div>
+    
+ </div>
+    
+ <script src="telaCadastro.js"></script>
+
+</body>
+</html>
